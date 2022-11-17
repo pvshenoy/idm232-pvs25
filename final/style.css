@@ -112,6 +112,50 @@ button {
     font-size: .5rem;
 }
 
+
+.perfume_content {
+    display: flex;
+    flex-direction: row;
+}
+
+.splash-art {
+    width: 20rem;
+    margin: 4rem 6rem;
+}
+
+.perfume-details {
+    display: flex;
+    flex-direction: column;
+    width: 70vh;
+    margin-left: 5rem;
+}
+
+.scent-and-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.notes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5rem;
+}
+
+.note {
+    width: 8rem;
+}
+
+.note-1, .note-2 {
+    border-right: 2px solid #10101b;
+    padding: 1rem;
+}
+
+.note-3 {
+    padding: 1rem;
+}
+
+
 footer {
     background-color: black;
     color: white;
