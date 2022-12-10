@@ -1,0 +1,285 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 1rem;
+}
+
+.logo {
+  margin-left: 1rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.menu_item {
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.search-icon {
+  margin: .2rem;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  height: 100vh;
+}
+
+.text-left {
+  margin: 4rem 0rem 0rem 6rem;
+  /* margin-left: 6rem;
+  margin-right: 2rem; */
+}
+
+.hero-text {
+  font-size: 3.25rem;
+}
+
+.hero_img {
+  width: 20rem;
+  margin-left: 5rem;
+  margin-right: 8rem;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.search {
+  font-size: large;
+  width: 25rem;
+  padding: 1rem 2.5rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+  border-bottom: 3px solid black;
+  background-color: white;
+}
+
+.perfume-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin:auto;
+  margin-left: 2rem;
+  margin: 2rem 2rem 2rem 0rem;
+}
+
+.perfume {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
+}
+
+.perfume-img {
+  display: flex;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  /* background-color:black; */
+}
+
+.perfume_classification {
+  display: flex;
+  flex-direction: column;
+  margin: auto 1.5rem;
+}
+
+.perfume-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.perfume-type {
+  font-weight: 400;
+  font-size: .5rem;
+}
+
+
+.perfume_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.splash-art {
+  width: 20rem;
+  margin: 4rem 6rem;
+}
+
+.perfume-details {
+  display: flex;
+  flex-direction: column;
+  width: 70vh;
+  margin-left: 5rem;
+}
+
+.scent-and-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.notes {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+}
+
+.note {
+  width: 8rem;
+}
+
+.note-1, .note-2 {
+  border-right: 2px solid #10101b;
+  padding: 1rem;
+}
+
+.note-3 {
+  padding: 1rem;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+}

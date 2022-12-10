@@ -1,0 +1,90 @@
+body {
+    background-image: url('../images/background.png');
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.logo {
+    width: 12rem;
+    height: 2.5rem;
+}
+
+.menu {
+    margin-top: .5rem;
+}
+
+.nav_item {
+    padding: 0rem 2rem;
+    font-family: multi-display,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.search_icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #FDFDFE;
+}
+
+a:visited {
+    color: #FDFDFE;
+}
+
+a:hover {
+    color: #FFE2A0;
+}
+
+header {
+    max-width: 60%;
+}
+
+.hero-title {
+    color: #ffe2a0;
+    font-family: multi-display,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4.5rem;
+    margin: 4rem 2rem 2rem 2rem;
+}
+
+.hero_linebreak {
+    margin: 0rem 2rem;
+}
+
+.hero_subtext {
+    color: #CACACA;
+    margin: 2rem 2rem 3.5rem 2rem;
+    font-family: multi-display,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.hero-button {
+    border-radius: 10px;
+    background-color: #6C89EC;
+    padding: 1rem 1.5rem;
+    font-family: multi-display,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    margin: 0rem 2rem;
+}
+
+.hero-button:hover {
+    color: #10101B;
+    background-color: #FFE2A0;
+}
+
+
