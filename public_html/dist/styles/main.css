@@ -10,6 +10,17 @@ nav {
     margin: 2rem;
 }
 
+h1 {
+    font-family: multi-display,sans-serif;
+}
+
+h2 {
+    font-family: multi-display,sans-serif;
+}
+
+h3 {
+    font-family: multi-display,sans-serif;
+}
 h4 {
     font-family: multi-display,sans-serif;
     font-weight: 700;
@@ -144,6 +155,16 @@ a.listing-link:hover {
     margin-bottom: .2rem;
 }
 
+
 .fragrance-brand {
     margin-top: 0rem;
+}
+
+.perfumes-title {
+    color: #FDFDFE;
+    font-family: multi-display,sans-serif;
+}
+
+.search {
+    padding: 4rem;
 }

@@ -14,7 +14,7 @@ $result = mysqli_query($db_connection, $query);
 
 
 
-        <h1 class="">Perfumes</h1>
+        <h1 class="perfumes-title">Explore All Perfumes</h1>
         <?php
         // If error query param exist, show error message
           if (isset($_GET['error'])) {

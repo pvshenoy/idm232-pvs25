@@ -15,6 +15,7 @@ $navigation_items = [
 
 ];
 ?>
+
 <div class="mb-8">
   <div class="sm:hidden">
     <label for="tabs" class="sr-only">Select a tab</label>
