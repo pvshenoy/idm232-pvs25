@@ -1,26 +1,26 @@
-<table class="min-w-full divide-y divide-gray-300">
-  <thead class="bg-gray-50">
-    <tr>
-      <th scope="col" class="">Image</th>
-      <th scope="col" class="">Name</th>
-      <th scope="col" class="">Brand</th>
-    </tr>
-  </thead>
-  <tbody class="divide-y divide-gray-200 bg-white">
-    <?php
-    // Cant combine functions with string so we have to assign the function to a variable here.
-    $site_url = site_url();
-while ($perfumes = mysqli_fetch_array($result)) {
-    echo "
-          <tr>
-            <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500 '>
-              <img class='' width='100px' height='100px' src='{$site_url}/{$perfumes['image']}' alt=''>
-            </td>
-            <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$perfumes['perfumeName']}</td>
-            <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$perfumes['brand']}</td>
-            <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$perfumes['description']}</td>
-          </tr>";
-}
-?>
-  </tbody>
-</table>
+<p>Use the search bar to find the perfect perfume for you!</p>
+        <form action="<?php echo site_url(); ?>/admin/search" method="GET">
+          <input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search">
+          <button type="submit">Search</button>
+        </form>
+
+<section class="fragrance-library">
+    <div class="fragrance-row">
+            <?php
+            $site_url = site_url();
+            while ($perfumes = mysqli_fetch_array($result)) {
+                echo "
+                    <div class='fragrance'>
+                        <a class='listing-link' href='{$site_url}/perfume-detail.php?id={$perfumes['id']}'>
+                            <div class='row-image'>
+                                <img src='{$site_url}{$perfumes['image']}' alt='' class='fragrance-image'>
+                            </div>d
+                            <h4 class='fragrance-title'>{$perfumes['perfumeName']}</h4>
+                            <p class='fragrance-brand'>{$perfumes['brand']}</p>
+                        </a>
+                    </div>
+                ";
+            }
+        ?>
+    </div>
+</section>

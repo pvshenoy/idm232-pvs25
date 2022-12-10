@@ -10,6 +10,21 @@ nav {
     margin: 2rem;
 }
 
+h4 {
+    font-family: multi-display,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: multi-display,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;  
+}
+
+
 .logo {
     width: 12rem;
     height: 2.5rem;
@@ -87,4 +102,48 @@ header {
     background-color: #FFE2A0;
 }
 
+/* perfume listings page styling */
 
+.fragrance-library {
+    background-color: #FDFDFE;
+    margin: none;
+    height: 90vh;
+}
+
+.fragrance {
+    margin: 2rem;
+}
+
+a.listing-link {
+    color: #10101B;
+}
+
+a.listing-link:hover {
+    color: #6C89EC;
+}
+.fragrance-row {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.row-image {
+    background-color: #E7EBF9;
+    width: 14rem;
+    height: 14rem;
+}
+
+.fragrance-image {
+    width: 5rem;
+    height: 12rem;
+    margin: 1rem 4.5rem;
+}
+
+.fragrance-title {
+    margin-top: .5rem;
+    margin-bottom: .2rem;
+}
+
+.fragrance-brand {
+    margin-top: 0rem;
+}
