@@ -21,6 +21,7 @@ $document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <link rel="icon" type="image/x-icon" href="<?php echo site_url(); ?>/dist/images/favicon.ico">
   <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/main.css">
+  <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/normalize.css">
   <link rel="stylesheet" href="https://use.typekit.net/aou7jso.css">
   <title><?php echo $document_title ; ?></title>
 </head>

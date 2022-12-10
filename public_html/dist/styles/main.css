@@ -163,6 +163,7 @@ a.listing-link:hover {
 .perfumes-title {
     color: #FDFDFE;
     font-family: multi-display,sans-serif;
+    margin: 2rem;
 }
 
 .search {
