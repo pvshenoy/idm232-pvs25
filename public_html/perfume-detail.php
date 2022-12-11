@@ -17,36 +17,47 @@ if (!isset($result)) {
     echo '$perfumes variable is not defined. Please check the code.';
 }
 ?>
-
+<section class="fragrance-library">
+<div class="details">
 <?php
-$site_url = site_url();
-while ($perfumes = mysqli_fetch_array($result)) {
-    echo "
-        <div class=''>
-            <div class=''>
-                <div class=''>
-                    <div>
-                        <h2 class=''>{$perfumes['perfumeName']}</h2>
-                        <div> 
-                            <p class=''>{$perfumes['type']}, <i>{$perfumes['brand']}</i> </p>
-                            <p class=''>{$perfumes['description']}</p>
-                        </div>
+            $site_url = site_url();
+            while ($perfumes = mysqli_fetch_array($result)) {
+                echo "
+                <img class='detail-image' src='{$site_url}/{$perfumes['image']}' alt=''>
+                <div class='inner-details'>
+                    <div class='text-content'>
+                        <h1 class='perfume-title'>{$perfumes['perfumeName']}</h1>
+                        <p class='perfume-type-brand'><span style='font-weight: 500;'>{$perfumes['type']} </span> , <i>{$perfumes['brand']}</i></p>
+                        <p class='description'>{$perfumes['description']}</p>
                     </div>
-                    <h2>Notes</h2>
-                    <img class='' width='500px' height='500px' src='{$site_url}/{$perfumes['topNote']}' alt=''>
-                    <img class='' width='500px' height='500px' src='{$site_url}/{$perfumes['middleNote']}' alt=''>
-                    <img class='' width='500px' height='500px' src='{$site_url}/{$perfumes['bottomNote']}' alt=''>
-                    <hr class='hr_30'>
-                    <div class=''>
+                    <h2 style='margin-bottom: 0rem;'>NOTES</h2>
+                    <div class='notes'>
+                        <div class='note note-one'>
+                            <img src='{$site_url}/{$perfumes['topNote']}' alt='' class='note-img top-note'>
+                            <p>TOP NOTES</p>
                         </div>
-                    </div> 
+                        <div class='vl'></div>
+                        <div class='note note-two'>
+                            <img src='{$site_url}/{$perfumes['middleNote']}' alt='' class='note-img middle-note'>
+                            <p>MIDDLE NOTES</p>
+                        </div>
+                        <div class='vl'></div>
+                        <div class='note note-three'>
+                            <img src='{$site_url}/{$perfumes['bottomNote']}' alt='' class='note-img bottom-note'>
+                            <p>BOTTOM NOTES</p>
+                        </div>
+                        <div class='vl-ghost'></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        ";
-}
-?>
-<!-- </div>
-          </div> -->
+                ";
+            }
+        ?>
+    </div>
+    </section>
+
+    <section class="white">
+        
+    </section>
 
 <?php include_once __DIR__ . '/_components/footer.php';

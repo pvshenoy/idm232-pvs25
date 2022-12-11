@@ -3,8 +3,8 @@
 if (!isset($page_title)) {
     $page_title = '🚨 Missing Title 🚨';
 }
-$site_title = 'JAWN Clips';
-$document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
+$site_title = 'AROMA';
+$document_title = $page_title . ' | ' . $site_title;
 
 ?>
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ $document_title = $page_title . ' | ' . $site_title; // Home | JAWN Clips
     referrerpolicy="origin"></script>
   <!-- Including TailwindCss Library -->
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  <link rel="icon" type="image/x-icon" href="<?php echo site_url(); ?>/dist/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="<?php echo site_url(); ?>/dist/images/favicon_logo.ico">
   <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/main.css">
   <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/normalize.css">
   <link rel="stylesheet" href="https://use.typekit.net/aou7jso.css">

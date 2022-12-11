@@ -14,8 +14,7 @@ $result = mysqli_query($db_connection, $query);
 
 
 
-        <h1 class="perfumes-title" style="    color: #FDFDFE;
-    font-family: multi-display,sans-serif;
+        <h1 class="perfumes-title" style="font-family: multi-display,sans-serif; font-weight: 500;
     margin: 2rem;" >Explore All Perfumes</h1>
 
         <?php

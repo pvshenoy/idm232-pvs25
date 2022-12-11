@@ -18,65 +18,57 @@ if ($result->num_rows > 0) {
 
 ?>
 
-<div class="mx-auto my-16 max-w-7xl px-4">
-  <div class="px-4 sm:px-6 lg:px-8">
-    <div class="sm:flex sm:items-center">
-      <div class="sm:flex-auto">
-        <h1 class="text-xl font-semibold text-gray-900">Edit Perfume</h1>
-      </div>
-    </div>
-    <div class="mt-8 flex flex-col">
-      <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-          <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
-            <form action="<?php echo site_url(); ?>/_includes/process-edit-perfumes.php" method="POST">
-              <div class="block">
-                <label for="">Perfume Name</label>
-                <input class="border-black border-2" type="text" name="perfumeName"
-                  value="<?php echo $perfumes['perfumeName']?>">
-              </div>
+<h1 class="perfumes-title">Edit Perfume</h1>
+            <form class="create"
+              action="<?php echo site_url(); ?>/_includes/process-edit-perfumes.php" method="POST">
+            <div class="form-content">
+              <div class="row">
+                <div class="form-text">
+                  <div class="item">
+                    <label for="">Fragrance Name</label>
+                      <input class="text-input" type="text" name="perfumeName" value="<?php echo $perfumes['perfumeName']?>">
+                  </div>
 
-              <div class="block">
-                <label for="">Type</label>
-                <input class="border-black border-2" type="text" name="type"
-                  value="<?php echo $perfumes['type']?>">
+                  <div class="item">
+                      <label for="">Type</label>
+                      <input class="text-input" type="text" name="type" value="<?php echo $perfumes['type']?>">
+                  </div>
+                  <div class="item">
+                      <label for="">Brand</label>
+                      <input class="text-input" type="text" name="brand" value="<?php echo $perfumes['brand']?>">
+                  </div>
+                  <div class="item">
+                      <label for="">Image</label>
+                      <input class="text-input" type="text" name="image" value="<?php echo $perfumes['image']?>">
+                  </div>
+                </div>
+                <div class="description-box">
+                  <div class="item">
+                        <label for="">Description</label>
+                        <input class="text-input description-input" type="text" name="description" value="<?php echo $perfumes['description']?>">
+                  </div>
+                </div>
               </div>
-              <div class="block">
-                <label for="">Brand</label>
-                <input class="border-black border-2" type="text" name="brand"
-                  value="<?php echo $perfumes['brand']?>">
-              <div class="block">
-                <label for="">Image</label>
-                <input class="border-black border-2" type="text" name="image"
-                  value="<?php echo $perfumes['image']?>">
-              </div>
-              <div class=" block">
-                <label for="">Description</label>
-                <input class="border-black border-2" type="text" name="description" value="<?php echo $perfumes['description']?>">
-              </div>
-              <div class=" block">
-                <label for="">Top Note</label>
-                <input class="border-black border-2" type="text" name="topNote" value="<?php echo $perfumes['topNote']?>">
-              </div>
-              <div class=" block">
-                <label for="">Middle Note</label>
-                <input class="border-black border-2" type="text" name="middleNote" value="<?php echo $perfumes['middleNote']?>">
-              </div>
-              <div class=" block">
-                <label for="">Bottom Note</label>
-                <input class="border-black border-2" type="text" name="bottomNote" value="<?php echo $perfumes['bottomNote']?>">
-              </div>
-              <input class=" nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4
-                  py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2
-                  focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto" type="submit" value="Submit">
+              <div class="notes-input">
+                <div class="item">
+                    <label for="">Top Note</label>
+                    <input class="text-input note-input" type="text" name="topNote" value="<?php echo $perfumes['topNote']?>">
+                  </div>
+                  <div class="item">
+                    <label for="">Middle Note</label>
+                    <input class="text-input note-input" type="text" name="middleNote" value="<?php echo $perfumes['middleNote']?>">
+                  </div>
+                  <div class="item">
+                    <label for="">Bottom Note</label>
+                    <input class="text-input note-input" type="text" name="bottomNote" value="<?php echo $perfumes['bottomNote']?>">
+                  </div>
+                </div>
+                <div class="submit_button">
+                  <input class="submit" type="submit" value="SUBMIT">
               <input type="hidden" name="id" value="<?php echo $perfumes['id']; ?>">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+              </div>
+                </div>
+
 
 
 

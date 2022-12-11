@@ -1,10 +1,13 @@
 
 <section class="fragrance-library">
-      <form class="search" action="<?php echo site_url(); ?>/admin/search" method="GET">
-        <input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search">
-        <button type="submit">Search</button>
-      </form>
-    <div class="fragrance-row">
+<div class="wrap">
+        <form class="search" action="<?php echo   site_url(); ?>/search" method="GET">
+                  <input class="searchTerm" type="text" name="search" id="search" placeholder="Search by perfume">
+                  <button class="searchButton" type="submit">
+                    <img style="margin-bottom: .2rem;" src="/dist/images/search-blue.png" alt="">
+                    </button>
+        </form>
+    <div style="flex-wrap: wrap;"class="fragrance-row">
             <?php
             $site_url = site_url();
             while ($perfumes = mysqli_fetch_array($result)) {

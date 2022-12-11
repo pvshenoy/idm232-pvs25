@@ -1,13 +1,14 @@
 body {
-    background-image: url('../images/background.png');
+    /* background-image: url('../images/background.png'); */
     background-size: cover;
+    font-family: multi-display,sans-serif;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2rem;
+    margin: 2rem 2rem 0rem 2rem;
 }
 
 h1 {
@@ -35,6 +36,10 @@ p {
     font-size: 1rem;  
 }
 
+header {
+    background-image: url('../images/background.png');
+    
+}
 
 .logo {
     width: 12rem;
@@ -60,19 +65,35 @@ p {
 
 a {
     text-decoration: none;
-    color: #FDFDFE;
+    color: #10101b;
 }
 
 a:visited {
-    color: #FDFDFE;
+    color: #10101b;
 }
 
 a:hover {
-    color: #FFE2A0;
+    color: #6C89EC;
+}
+
+.flower-hero {
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    height: 100vh;
 }
 
 header {
     max-width: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    height: 100vh;
 }
 
 .hero-title {
@@ -81,7 +102,8 @@ header {
     font-weight: 500;
     font-style: normal;
     font-size: 4.5rem;
-    margin: 4rem 2rem 2rem 2rem;
+    padding-top: 2rem;
+    margin: 1rem 2rem 2rem 2rem;
 }
 
 .hero_linebreak {
@@ -118,7 +140,9 @@ header {
 .fragrance-library {
     background-color: #FDFDFE;
     margin: none;
-    height: 90vh;
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: wrap;
 }
 
 .fragrance {
@@ -132,40 +156,544 @@ a.listing-link {
 a.listing-link:hover {
     color: #6C89EC;
 }
+
 .fragrance-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 2rem;
+    justify-content: center;
 }
 
 .row-image {
-    background-color: #E7EBF9;
+    border: 1px solid #10101B;
     width: 14rem;
     height: 14rem;
 }
 
 .fragrance-image {
-    width: 5rem;
+    width: 8rem;
     height: 12rem;
-    margin: 1rem 4.5rem;
+    margin: 1rem 3rem;
 }
 
 .fragrance-title {
-    margin-top: .5rem;
+    margin-top: .8rem;
     margin-bottom: .2rem;
+    max-width: 13rem;
+    text-transform: uppercase;
 }
 
 
 .fragrance-brand {
     margin-top: 0rem;
+    text-transform: uppercase;
 }
 
 .perfumes-title {
-    color: #FDFDFE;
+    color: #10101b;
     font-family: multi-display,sans-serif;
     margin: 2rem;
 }
 
 .search {
     padding: 4rem;
+}
+
+/* detail page */
+
+.detail-image {
+    width: 20rem;
+    height: 25rem;
+    margin: 5rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.notes {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+}
+
+.perfume-title {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+.perfume-type-brand {
+    margin-top: .3rem;
+    text-transform: uppercase;
+}
+
+.description {
+    max-width: 80%;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+}
+
+.note-img {
+    width: auto;
+    height: 8rem;
+    /* padding: 2rem 4rem 0rem 4rem; */
+
+}
+
+.vl {
+    border-left: 2px solid #10101B;
+    height: 8rem;
+    margin-top: 2rem;
+}
+
+.vl-ghost {
+    border-left: 2px solid white;
+    height: 8rem;
+    margin-top: 2rem;
+}
+
+
+/* admin styling */
+
+.perfumes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.perfume-card {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 14rem;
+    border: 1px solid #10101B;
+    background-color: #E7EBF9;
+    margin: 2rem auto;
+    justify-content: center;
+}
+
+.perfume-card-image {
+    /* border: 1px solid #10101B; */
+    background-color: white;
+    width: 14rem;
+    height: 14rem;
+}
+
+.perfume-image {
+    width: 5rem;
+    height: 12rem;
+    margin: 1rem 4.5rem; 
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+
+.card-text-content {
+    margin-left: 1rem;
+    margin-top: .3rem;
+}
+
+.perfume-title {
+    font-weight: 500;
+    margin-top: .5rem;
+    margin-bottom: 0rem;
+    font-family: multi-display,sans-serif;
+    font-size: 1.5rem;
+}
+
+.brand {
+    font-weight: 400;
+    margin-top: 0rem; 
+    font-family: multi-display,sans-serif;
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+
+.card-description {
+    display: block;
+    display: -webkit-box;
+    text-transform: none;
+    margin-top: .3rem;
+    margin-bottom: .5rem;
+    max-width: 80%;
+    font-family: multi-display,sans-serif;
+    height: 74px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.card-notes {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+
+.note {
+    margin-top: 2rem;
+    width: 8rem;
+    height: 8rem;
+    padding: 0rem 1rem;
+}
+
+.notee {
+    width: 4rem;
+    height: 4rem;
+    padding: 0rem 1rem;
+}
+
+svg {
+    width: 2rem;
+    height: 2rem;
+}
+.svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.st0:hover {
+    fill: #6C89EC;
+}
+
+.notes-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.actions {
+    margin-right: 1rem;
+    margin-top: 1.75rem;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #E7EBF9;
+    padding: 1rem 1.5rem;
+    font-family: multi-display,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    margin: 0rem 2rem;
+    outline: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+
+.search {
+    width: 100%;
+    display: flex;
+    margin: 0rem 2rem 0rem 2rem;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #E7EBF9;
+    border-right: none;
+    padding: 1rem;
+    height: 1rem;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #97A4CF;
+    background-color: #E7EBF9;
+    font-size: 1rem;
+    font-family: multi-display,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.searchTerm:focus{
+    color: #97A4CF;
+}
+
+.searchButton {
+    width: 4rem;
+    height: 3.375rem;
+    border: 1px solid #E7EBF9;
+    background: #E7EBF9;
+    text-align: center;
+    color: #10101B;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: space-around;
+}
+
+.wrap-admin {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-around;
+}
+
+.search-button {
+    width: 4rem;
+    height: 3.375rem;
+    border: 1px solid #E7EBF9;
+    background: #E7EBF9;
+    color: #10101B;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: .2rem;
+}
+
+a.search-button:visited {
+    color: #10101B;
+}
+
+a.search-button:hover {
+    color: #6C89EC;
+}
+
+/* create/edit pages */
+
+.form-content {
+    margin: 1rem auto;
+    justify-content: space-between;
+}
+
+.create {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    color: #10101B;
+    margin: 0rem auto;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-subheading {
+    margin-left: 2rem;
+}
+
+.item {
+    display: flex;
+    flex-direction:column;
+    margin: 1rem;
+}
+
+label {
+    color: #10101B;
+    padding: 1rem 0rem;
+}
+
+.text-input {
+    background-color:#E7EBF9;
+    color: #10101B;
+    width: 20rem;
+    height: 3.375rem;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    padding: 0rem 1rem;
+    text-transform: uppercase;
+    font-family: multi-display,sans-serif;
+}
+
+.description-input {
+    width: 25rem;
+    height: 26rem;
+}
+
+.note-input {
+    width: 13rem;
+}
+
+.notes-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+::placeholder {
+    color: #97A4CF;
+    opacity: .4;
+}
+
+.submit {
+    width: 6rem;
+    height: 3.375rem;
+    border: 1px solid #E7EBF9;
+    background: #97A4CF;
+    color: #10101B;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: .2rem;
+}
+
+.submit_button {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1rem;
+}
+
+.admin-search {
+    background-color: #FDFDFE;
+    margin: none;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.perfumes-admin-search {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: none;
+}
+
+.center-admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.white {
+    width: 100vw;
+    height: 30vh;
+    background-color: white;
+    border: none;
+}
+
+.no_results {
+    display: flex;
+    width: 60%;
+    height: 60%;
+    margin: 2rem auto;
+}
+
+.mobile-nav {
+    display: none;
+}
+.mobile_nav_item {
+    width: 1rem;
+    height: 1rem;
+    padding: 0rem 2rem;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 874px) {
+    
+    .perfume-card {
+        width: 14rem;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .notes-actions {
+        flex-direction: row-reverse;
+    }
+
+    .card-notes {
+        display: none;
+    }
+
+    .card-description {
+        max-width: 90%;
+    }
+
+    .white {
+        width: 105vmax;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-nav {
+        margin: 0rem 2rem 2rem 0rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .inner-details {
+        margin: auto;
+    }
+    .description {
+        max-width: 100%;
+    }
+    .home {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero_subtext {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 923px) {
+    .white {
+        width: 105vmax;
+    }
+
+    .details {
+        flex-direction: column;
+        margin-left: 2rem;
+        justify-content: center;
+    }
+
+    .fragrance-library {
+        width: 100vw;
+    }
+
 }
